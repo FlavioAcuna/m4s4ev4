@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrum Master - Gestión de Tareas</title>
+    <link
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1>Gestión de Tareas</h1>
+      <form id="taskForm">
+        <div class="form-group mt-2">
+          <label for="task">Nueva Tarea:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="task"
+            placeholder="Ingrese una tarea"
+            required
+          />
+        </div>
+        <button type="button" class="btn btn-primary mt-2" onclick="addTask()">
+          Agregar Tarea
+        </button>
+        <button
+          type="button"
+          class="btn btn-danger ml-2 mt-2"
+          onclick="clearTasks()"
+        >
+          Limpiar Tareas
+        </button>
+      </form>
+
+      <h2 class="mt-4">Lista de Tareas</h2>
+      <ul id="taskList" class="list-group">
+        <!-- Las tareas se agregarán aquí -->
+      </ul>
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./asset/js/script.js"></script>
+  </body>
+</html>
